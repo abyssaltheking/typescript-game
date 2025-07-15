@@ -26,7 +26,7 @@ export class Camera {
         }
     }
 
-    updatePosition(damping: number) {
+    public updatePosition(damping: number) {
         this.velocity.x = HelperMath.clamp(this.velocity.x, this.terminalVelocity.minimum, this.terminalVelocity.maximum);
         this.velocity.y = HelperMath.clamp(this.velocity.y, this.terminalVelocity.minimum, this.terminalVelocity.maximum);
 
